@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Srikanth Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.min.css"
+      integrity="sha512-EJp8vMVhYl7tBFE2rgNGb//drnr1+6XKMvTyamMS34YwOEFohhWkGq13tPWnK0FbjSS6D8YoA3n3bZmb3KiUYA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+        <h1>srik<span>anth.</span></h1>
+      </div>
+      <div class="li-items">
+        <ul>
+          <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+            <a href="#"> Home</a>
+          </li>
+          <li
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="200"
+            class="skill1"
+            onclick="triger()"
+          >
+            <a href="#"> Skills</a>
+          </li>
+          <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+            <a href="#">Projects</a>
+          </li>
+          <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+            <a href="#">Github</a>
+          </li>
+          <li
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="500"
+            onclick="look()"
+          >
+            <a href="#">Contact</a>
+          </li>
+          <li class="bar">
+            <a href="#"><i class="fa-solid fa-bars hamburg"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <ul>
+          <li><a href="#"> Home</a></li>
+          <li><a href="#"> Skills</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Github</a></li>
+          <li onclick="open"><a href="#">Contact</a></li>
+          <li>
+            <a href="#"><i class="fa-solid fa-xmark cancel"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+      <img src="sri2.jpeg" alt="" />
+    </div>
+    <div class="content">
+      <div
+        data-aos="fade-left"
+        data-aos-duration="1500"
+        data-aos-delay="600"
+        class="intro1"
+      >
+        Hey I'm <span class="span2">Srikanth</span>
+      </div>
+      <div
+        data-aos="fade-right"
+        data-aos-duration="1500"
+        data-aos-delay="700"
+        class="intro2"
+      >
+        I'm a <span> Web-Developer</span>
+      </div>
+      <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">
+        We will create a Website Budget Friendly to the Costumers. <br />
+        We only focus on Customers Satisfications. <br />
+        If you Want to Contact me click Hire.
+      </p>
+
+      <div class="social">
+        <a
+          href="#"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-delay="1300"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a
+          href="#"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-delay="1400"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          href="#"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-delay="1500"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          href="#"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-delay="1600"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+      </div>
+
+      <button
+        data-aos="zoom-out"
+        data-aos-duration="1500"
+        data-aos-delay="1800"
+        onclick="hire()"
+        class="btn"
+      >
+        Hire
+      </button>
+    </div>
+    <div class="skills">
+      <p class="info" style="margin-left: 20px">My Skills:</p>
+      <li>
+        <h2>HTML5</h2>
+        <span class="bar"><span class="html"></span></span>
+      </li>
+      <li>
+        <h2>CSS3</h2>
+        <span class="bar"><span class="css"></span></span>
+      </li>
+      <li>
+        <h2>Javascript</h2>
+        <span class="bar"><span class="js"></span></span>
+      </li>
+
+      <a href="#" onclick="remover()"
+        ><i class="fa-solid fa-xmark cancel"></i
+      ></a>
+    </div>
+    <div class="contact">
+      <h3>Please Enter this Info Correctly</h3>
+      <label for="username">Customer Name:</label>
+      <input type="text" required placeholder="Enter a name" id="username" />
+      <label for="mobile">Mobile No:</label>
+      <input type="tel" placeholder="Enter a Number" id="mobile" />
+      <label for="">What you want?</label>
+      <input type="" />
+      <button onclick="trans()" class="btn btn1">Submit</button>
+    </div>
+    <div onclick="close()" class="call">
+      <h3>help line :</h3>
+      <h4>ph:7904308726</h4>
+      <a href="#" onclick="remove()"
+        ><i class="fa-solid fa-xmark cancel"></i
+      ></a>
+    </div>
+    <div class="footer">
+      <p class="foottext">
+        coded by: <span class="devname"> Ravanan.Dev</span>@2024
+      </p>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="node.js"></script>
+  </body>
+</html>
