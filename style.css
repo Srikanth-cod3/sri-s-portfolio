@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  /* height: 100vh;
+  width: 100%; */
+  font-family: "Poppins", system-ui;
+  font-weight: 600;
+  font-style: normal;
+  background-color: #071952;
+}
+h1 {
+  color: white;
+  margin-top: -1px;
+}
+span {
+  color: #597445;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.li-items {
+  position: relative;
+}
+.li-items ul {
+  display: flex;
+}
+.li-items ul li {
+  display: flex;
+  margin-left: 100px;
+  text-decoration: none;
+}
+.li-items ul li a {
+  text-decoration: none;
+  color: #f1f1f1;
+  font-size: 18px;
+  transition: ease-in-out 0.5s;
+}
+.li-items ul li a .hamburg {
+  position: absolute;
+  right: 5px;
+  font-weight: 800;
+  font-size: 23px;
+  display: none;
+}
+.li-items ul li a:hover {
+  color: #597445;
+  text-shadow: 0px 0px 5px #597445;
+}
+.dropdown {
+  display: none;
+  display: absolute;
+  justify-content: center;
+}
+.image img {
+  height: 400px;
+  width: 350px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 45%;
+  margin-top: 100px;
+  margin-left: 100px;
+  transition: ease-in-out 0.7s;
+  box-shadow: 0px 0px 90px rgb(255, 255, 255);
+}
+.image img:hover {
+  animation: animate 1.5s ease-in-out;
+}
+@keyframes animate {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.05;
+  }
+  100% {
+    scale: 1;
+  }
+}
+.content {
+  position: absolute;
+  left: 600px;
+  top: 250px;
+}
+.intro1 {
+  color: orange;
+  font-size: 30px;
+}
+.intro2 {
+  padding-top: 15px;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  margin-left: 32px;
+}
+.span2 {
+  color: white;
+}
+p {
+  color: rgb(128, 128, 128);
+  font-size: 18px;
+  padding: 20px;
+}
+.fa-brands {
+  color: rgb(230, 227, 222);
+  font-size: 25px;
+  margin-left: 30px;
+  transition: ease-in-out 0.6s;
+}
+.fa-brands:hover {
+  box-shadow: 0px 0px 40px gray;
+
+  color: orange;
+}
+.btn {
+  text-align: center;
+  height: 35px;
+  width: 100px;
+  padding: 15px;
+  margin-top: 30px;
+  background-color: #597445;
+  margin-left: 30px;
+  outline: none;
+  border: none;
+  color: white;
+  font: 500;
+  font-size: 15px;
+  font-variant: small-caps;
+  border-radius: 8px;
+  transition: 0.7s ease-in-out;
+}
+.btn:hover {
+  background-color: orange;
+  color: black;
+  box-shadow: 0px 0px 40px gray;
+}
+.skills {
+  display: none;
+  height: 500px;
+  width: 700px;
+  justify-content: center;
+  align-items: center;
+  margin-top: -500px;
+  margin-left: 580px;
+  margin-right: 200px;
+  flex-direction: column;
+  backdrop-filter: blur(15px);
+  box-shadow: 0px 0px 20px black;
+}
+.block {
+  display: block;
+}
+.skills .info {
+  color: #adc5cf;
+  font-size: 25px;
+  font-weight: bold;
+  font-variant: small-caps;
+  text-shadow: 0px 0px 5px #ef8008, 0px 0px 10px #ef8008, 0px 0px 15px #ef8008;
+}
+.cancel {
+  height: 20px;
+  width: 20px;
+  padding: 5px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 22px;
+  color: orange;
+  transition: ease-in 0.4s;
+}
+.cancel:hover {
+  color: white;
+  background-color: red;
+}
+.skills p {
+  color: white;
+  margin-left: 200px;
+}
+.skills li {
+  margin: 10px auto;
+  padding: 10px;
+  text-decoration: none;
+  list-style: none;
+}
+h2 {
+  color: #fcf8ff;
+}
+.bar {
+  height: 20px;
+  display: block;
+  border: 2px solid white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px rgb(11, 11, 84);
+  transition: ease-in-out 0.4s;
+}
+.bar:hover {
+  box-shadow: 0px 0px 10px rgb(11, 11, 84);
+}
+.bar span {
+  height: 20px;
+  float: left;
+  background: linear-gradient(
+    to right,
+    #ce7e43,
+    #d0951d,
+    #beb100,
+    #95ce00,
+    #23eb12
+  );
+}
+.html {
+  animation: html 3s;
+  width: 90%;
+}
+.css {
+  animation: css 3s;
+  width: 80%;
+}
+.js {
+  animation: js 3s;
+  width: 60%;
+}
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes js {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+/* .trans {
+  transform: translateY(600px);
+} */
+.contact {
+  transform: translateY(-700px);
+  display: block;
+  position: absolute;
+  margin-top: -480px;
+  margin-left: 580px;
+  margin-right: 200px;
+  display: flex;
+  flex-direction: column;
+  height: 430px;
+  width: 600px;
+  backdrop-filter: blur(15px);
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 5px black;
+  /* background-color: #fff; */
+  transition: 0.6s ease-in;
+}
+.contact input {
+  width: 50%;
+  height: 23px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-bottom: 20px;
+  font-family: "Poppins", system-ui;
+  font-weight: 600;
+  font-style: normal;
+  margin-top: 10px;
+}
+.contact h3 {
+  color: #adc5cf;
+  font-size: 25px;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+.contact label {
+  color: #c4fcef;
+}
+.btn1 {
+  margin-left: 7%;
+}
+.call {
+  height: 90px;
+  width: 200px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 8px black;
+  transform: translateY(-450px);
+  position: absolute;
+  top: 80px;
+  right: 45px;
+  transition: ease-in-out 0.4s;
+}
+.call h4 {
+  margin-left: 20px;
+  margin-top: -10px;
+  color: #fcf8ff;
+}
+.call h3 {
+  color: orange;
+  margin-left: 10px;
+}
+.footer {
+  margin: 0%;
+  position: absolute;
+  bottom: 0%;
+  height: 60px;
+  width: 100vw;
+  background-color: rgb(30, 28, 28);
+  scrollbar-width: none;
+  text-align: center;
+}
+.footer p {
+  margin-top: -3px;
+}
+.foottext {
+  color: #b1620d;
+}
+.devname {
+  color: rgb(230, 220, 220);
+  font-weight: bold;
+}
+@media all and (max-width: 900px) {
+  body {
+    background-color: red;
+  }
+  .logo h1 {
+    font-size: 15px;
+  }
+  .li-items {
+    display: none;
+  }
+  .image img {
+    position: absolute;
+    left: -70px;
+    top: -5px;
+    height: 200px;
+    width: 200px;
+  }
+  .bar .hamburg {
+    display: block;
+  }
+  .dropdown {
+    display: block;
+  }
+}
